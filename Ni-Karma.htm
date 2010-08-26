@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<style type="text/css">
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Ni-Karma.min.js"></script>
+<script type="text/javascript" src="js/jatt.min.js"></script>
+<script type="text/javascript" src="http://www.wowhead.com/widgets/power.js"></script>
+
+<!-- Choose from Ni-Karma-dark.css, Ni-Karma-light.css or make your own -->
+<link rel="stylesheet" href="css/Ni-Karma-dark.css" type="text/css" />
+
+<script type="text/javascript">
+jQuery(document).ready(function($){
+
+ /* change "fixlocal" to correct class name */
+ var fix = [];
+ fix['laercyn'] = 'warlock';
+ fix['maybelater'] = 'priest';
+ fix['Shatterfist'] = 'Paladin';
+ fix['Ssapped'] = 'Rogue';
+ fix['thorsham'] = 'Shaman';
+
+ /* setup Ni Karma list */
+ $('#nikarma').nikarma({
+  nkFile           : 'Ni_Karma.lua',   // Ni Karma file name & location
+  database         : 'Test.ICC.ICC25', // Ni Karma Database location
+  tooltipShowsLast : 5,                // show the last # entries in the tooltip
+  popupWidth       : 500,              // popup window width
+  popupHeight      : 450,              // popup window height
+  sortOrder        : [3,1],            // Initial sort by column 3 (Total Karma column) in ascending order (high to low)
+  fixNames         : fix               // Replace "fixlocal" with class: fix['Toon Name'] = 'Class';
+                                       // 'Toon Name' should include all capitals and spaces, exactly like you see it in the table
+                                       // 'Class' should be a predefined wow class (captial letters don't matter)
+ });
+
+ /* tooltip script */
+ $.jatt({
+  direction: 's',
+  live: true
+ });
+
+
+});
+</script>
+
+</head><body>
+
+<div id="nikarma">
+ <table>
+  <thead>
+   <tr class="title">
+    <th class="name">Name</th>
+    <th class="wowclass">Class</th>
+    <th class="lastitem">Last Item</th>
+    <th class="total">Total Karma</th>
+   </tr>
+  </thead>
+  <tbody>
+  </tbody>
+ </table>
+</div>
+
+</body></html>

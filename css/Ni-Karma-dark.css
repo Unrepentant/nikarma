@@ -1,0 +1,67 @@
+/* Ni Karma page styles */
+/* Overall page */
+body { background: #000; color: #eee; }
+a:link { color: #fc0; }
+a:hover { color: #fff; }
+a:visited,a:active { color: #f80; }
+
+/* Table position and size */
+#nikarma table { margin: 0 auto; }
+
+/* Table borders */
+#nikarma table, #nikarma td, #nikarma th { border: 0; border-collapse: collapse; }
+#nikarma tr.header { border: #444 solid; border-width: 0 0 1px 0; }
+
+/* Default table column */
+#nikarma th { width: 120px; }
+
+/* Rank Last Item width */
+#nikarma th.lastitem { width: 250px; }
+
+/* All table cells */`
+#nikarma td { padding: 1px 5px; text-align: left; }
+
+/* total karma column */
+#nikarma td.total { text-align: center; }
+
+/* automatically capitalize the first letter */
+#nikarma td.wowclass { text-transform: capitalize; } 
+
+/* negative points color */
+#nikarma td.negative { color: #ff0000; }
+
+/* class colors */
+.deathknight { color: #c41f3b; }
+.druid { color: #ff7d0a; }
+.hunter { color: #abd473; }
+.mage { color: #69ccf0; }
+.paladin { color: #f58cba; }
+.priest { color: #fff; }
+.rogue { color: #fff569; }
+.shaman { color: #2459ff; }
+.warlock { color: #9482c9; }
+.warrior { color: #c79c6e; }
+.unknown { color: #999; }
+
+/* Tooltip style & columns */
+.tooltip, .preview, .screenshot { cursor:pointer; }
+#tooltip, #preview { color:#eee; background:#000; border: 1px solid #333333; padding:5px; display:none; opacity: 0.9; filter: alpha(opacity=90); text-align:left; border-radius: 1em; -moz-border-radius: 1em; }
+
+#tooltip .title { font-size: 20px; font-weight: bold; text-align: center; }
+#tooltip .date, .date { width: 130px; text-align: left; }
+#tooltip .type, .type { width: 50px; text-align: center; }
+#tooltip .reason, .reason { width: 250px; text-align: left; }
+#tooltip .value, .value { width: 50px; text-align: center; }
+
+/* Sorting header */
+th.header {
+ background: #222222 url(../images/sort-white.gif) left center no-repeat;
+ color: #fff;
+ cursor: pointer;
+ font-weight: bold;
+ text-align:center;
+ padding-left: 10px;
+ border-right: 1px solid #000000;
+}
+th.headerSortUp { background: #440000 url(../images/asc-white.gif) left center no-repeat; }
+th.headerSortDown { background: #804000 url(../images/desc-white.gif) left center no-repeat; }
