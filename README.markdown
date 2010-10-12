@@ -1,4 +1,4 @@
-**Features**
+**Features** ([demo][1])
 
 * Parse Ni_Karma.lua file created by the World of Warcraft Ni Karma
 * addon (http://www.knights-who-say-ni.com/NKS) using javascript/jQuery only.
@@ -47,3 +47,5 @@ HTML:
 Version 1.0 (8/25/2010)
 
 * Ni Karma script posted on github.
+
+ [1]: http://mottie.github.com/nikarma/
