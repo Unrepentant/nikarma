@@ -48,4 +48,4 @@ Version 1.0 (8/25/2010)
 
 * Ni Karma script posted on github.
 
- [1]: http://mottie.github.com/nikarma/
+ [1]: http://Unrepentant.github.com/nikarma/
