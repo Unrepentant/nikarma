@@ -22,7 +22,7 @@ Script:
      sortOrder        : [0,0],            // Initial sort by column 0 (far left) in ascending order (a-z)
      fixClass         : []                // Replace "Unknown" with class: fix['Toon Name'] = 'Class';
                                           // 'Toon Name' should include all capitals and spaces, exactly like you see it in the table
-                                          // 'Class' should be a predefined wow class (captial letters don't matter)
+                                          // 'Class' should be a predefined wow class (capital letters don't matter)
     });
 
 HTML:
